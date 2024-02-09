@@ -1,8 +1,20 @@
+import HeroImages from "@/components/features/HeroImages";
 import ContainerFluid from "@/components/ui/ContainerFluid";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center my-4">
+      <div className="hero flex gap-14 mt-20 mb-20">
+        <HeroImages></HeroImages>
+        <div className="titles space-y-2 max-w-[400px]">
+          <h1 className="text-5xl font-bold">
+            ¡Hasta 15 días de entregas gratis!
+          </h1>
+          <p>Para tus primeros pedidos en Restaurantes pagando con tarjeta.</p>
+          <Button>Pide ahora</Button>
+        </div>
+      </div>
       <ContainerFluid>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
